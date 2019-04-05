@@ -4,12 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "migration:init": "node scripts/mongo-migrate.js init",
+    "migration:create": "node scripts/mongo-migrate.js create",
+    "migration:config": "node scripts/mongo-migrate.js config",
+    "migration:dryrun": "node scripts/mongo-migrate.js dryrun",
+    "migration:up": "node scripts/mongo-migrate.js up",
+    "migration:down": "node scripts/mongo-migrate.js down",
+    "migration:status": "node scripts/mongo-migrate.js status",
+    "migration": "node scripts/mongo-migrate.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "migrate-mongo": "^5.0.1"
+    "migrate-mongo": "^5.0.1",
+    "moment": "^2.24.0"
   }
 }
